@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Portfolio học tập của Huy — thiết kế giao diện, phát triển website và phân tích hệ thống."
+  >
+
+  <title>Huy — Portfolio cá nhân</title>
+
+  <link rel="stylesheet" href="./bai%20tap/cssforweb.css">
+  <script src="./bai%20tap/javaforweb.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Đến nội dung chính</a>
+
+  <!-- HEADER -->
+  <header class="header container">
+    <a class="logo" href="#home" aria-label="Huy - Trang chủ">
+      Huy<span>®</span>
+    </a>
+
+    <nav class="navigation" aria-label="Điều hướng chính">
+      <a href="#about">Giới thiệu</a>
+      <a href="#projects">Dự án</a>
+      <a href="#skills">Kỹ năng</a>
+      <a href="#contact">Liên hệ ↗</a>
+    </nav>
+
+    <a class="contact-link" href="#contact">
+      Kết nối <span>↗</span>
+    </a>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero container" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          PORTFOLIO HỌC TẬP / 2026
+        </p>
+
+        <h1>
+          Biến ý tưởng<br>
+          thành <em>trải nghiệm.</em>
+        </h1>
+
+        <p class="hero-description">
+          Xin chào, mình là <strong>Nguyễn Việt Đức Huy.</strong><br>
+          Sinh viên Công nghệ thông tin, yêu thích thiết kế giao diện
+          và xây dựng những sản phẩm web dễ sử dụng.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-dark" href="#projects">
+            Khám phá dự án <span>↗</span>
+          </a>
+
+          <button
+            class="button button-outline"
+            id="print-button"
+            type="button"
+          >
+            In / Lưu CV <span>↓</span>
+          </button>
+        </div>
+
+        <p class="hero-note">
+          THIẾT KẾ CÓ CHỦ ĐÍCH. HỌC HỎI QUA THỰC HÀNH.
+        </p>
+      </div>
+
+      <div
+        class="hero-art"
+        role="img"
+        aria-label="Minh họa hình cầu xanh trong không gian sáng tạo"
+      >
+        <div class="art-grid"></div>
+
+        <span class="art-label">EXPLORING IDEAS — 01</span>
+
+        <div class="sphere"></div>
+        <div class="orbit"></div>
+
+        <div class="floating-code">&lt;/&gt;</div>
+
+        <span class="art-star">✳</span>
+
+        <div class="floating-tag">design → develop</div>
+
+        <div class="art-footer">
+          <span>CREATIVE<br>DEVELOPER</span>
+          <span>DESIGN<br>&amp; CODE</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- DẢI CHỮ -->
+    <div class="ticker" aria-label="Lĩnh vực quan tâm">
+      <span>UI / UX DESIGN</span>
+      <b aria-hidden="true">✳</b>
+      <span>WEB DEVELOPMENT</span>
+      <b aria-hidden="true">✳</b>
+      <span>INFORMATION SYSTEMS</span>
+      <b aria-hidden="true">✳</b>
+      <span>CONTINUOUS LEARNING</span>
+    </div>
+
+    <!-- GIỚI THIỆU -->
+    <section class="section container about" id="about">
+      <div>
+        <p class="eyebrow">01 / MỘT CHÚT VỀ MÌNH</p>
+      </div>
+
+      <div class="about-content">
+        <h2>
+          Tò mò về công nghệ.<br>
+          Quan tâm đến con người.
+        </h2>
+
+        <p class="muted">
+          Mình học cách kết nối tư duy hệ thống với thiết kế trực quan:
+          từ phân tích yêu cầu, phác thảo giao diện đến xây dựng website.
+          Với mỗi bài tập, mình muốn hiểu cả cách sản phẩm hoạt động
+          lẫn cách người dùng trải nghiệm nó.
+        </p>
+
+        <div class="about-information">
+          <div>
+            <span>LĨNH VỰC</span>
+            <strong>Công nghệ thông tin</strong>
+          </div>
+
+          <div>
+            <span>ĐỊNH HƯỚNG</span>
+            <strong>Web · UI/UX · BA</strong>
+          </div>
+
+          <div>
+            <span>ĐANG THỰC HÀNH</span>
+            <strong>Git &amp; triển khai web</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DỰ ÁN -->
+    <section class="projects-section" id="projects">
+      <div class="section container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 / DỰ ÁN TIÊU BIỂU</p>
+            <h2>Học qua từng sản phẩm.</h2>
+          </div>
+
+          <div class="filters" role="group" aria-label="Lọc dự án">
+            <button
+              type="button"
+              class="filter-button active"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              Tất cả
+            </button>
+
+            <button
+              type="button"
+              class="filter-button"
+              data-filter="design"
+              aria-pressed="false"
+            >
+              UI/UX
+            </button>
+
+            <button
+              type="button"
+              class="filter-button"
+              data-filter="web"
+              aria-pressed="false"
+            >
+              Web
+            </button>
+
+            <button
+              type="button"
+              class="filter-button"
+              data-filter="system"
+              aria-pressed="false"
+            >
+              Hệ thống
+            </button>
+          </div>
+        </div>
+
+        <p class="section-description">
+          Các chủ đề học tập; hình ảnh bên dưới là minh họa giao diện.
+        </p>
+
+        <div class="project-grid">
+          <!-- DỰ ÁN 1 -->
+          <article class="project-card" data-category="design">
+            <button
+              type="button"
+              class="project-button"
+              data-project="beer"
+              aria-label="Xem chi tiết Beer Hoàng Thành"
+            >
+              <div class="project-visual beer-visual">
+                <div class="browser-mockup beer-mockup">
+                  <div class="mockup-navigation">
+                    <strong>HOÀNG THÀNH</strong>
+                    <span>MENU · ĐẶT BÀN</span>
+                  </div>
+
+                  <div class="beer-heading">
+                    Vị bia mát.<br>
+                    Chuyện thêm vui.
+                  </div>
+
+                  <div class="beer-glass"></div>
+
+                  <span class="mockup-button">
+                    KHÁM PHÁ THỰC ĐƠN ↗
+                  </span>
+                </div>
+
+                <span class="project-number">01</span>
+              </div>
+
+              <div class="project-information">
+                <div>
+                  <p class="project-category">UI/UX · F&amp;B</p>
+
+                  <h3>Beer Hoàng Thành</h3>
+
+                  <p class="project-description">
+                    Trải nghiệm xem thực đơn và đặt bàn.
+                  </p>
+                </div>
+
+                <span class="arrow-circle" aria-hidden="true">↗</span>
+              </div>
+            </button>
+          </article>
+
+          <!-- DỰ ÁN 2 -->
+          <article class="project-card" data-category="web">
+            <button
+              type="button"
+              class="project-button"
+              data-project="portfolio"
+              aria-label="Xem chi tiết Portfolio cá nhân"
+            >
+              <div class="project-visual portfolio-visual">
+                <div class="browser-mockup portfolio-mockup">
+                  <div class="mockup-navigation">
+                    <strong>huy®</strong>
+                    <span>ABOUT · WORK</span>
+                  </div>
+
+                  <div class="portfolio-heading">
+                    Ideas into<br>
+                    <em>experiences.</em>
+                  </div>
+
+                  <div class="small-sphere"></div>
+
+                  <span class="mockup-button">
+                    VIEW SELECTED WORK ↗
+                  </span>
+                </div>
+
+                <span class="project-number">02</span>
+              </div>
+
+              <div class="project-information">
+                <div>
+                  <p class="project-category">FRONT-END · FIT4014</p>
+
+                  <h3>Portfolio cá nhân</h3>
+
+                  <p class="project-description">
+                    Từ mã nguồn đến website hoàn chỉnh.
+                  </p>
+                </div>
+
+                <span class="arrow-circle" aria-hidden="true">↗</span>
+              </div>
+            </button>
+          </article>
+
+          <!-- DỰ ÁN 3 -->
+          <article class="project-card" data-category="system">
+            <button
+              type="button"
+              class="project-button"
+              data-project="system"
+              aria-label="Xem chi tiết Quản lý đoàn viên"
+            >
+              <div class="project-visual system-visual">
+                <div class="dashboard-mockup">
+                  <div class="dashboard-sidebar">
+                    <strong>ĐOÀN VIÊN</strong>
+                    <span>▦ Tổng quan</span>
+                    <span>☷ Hồ sơ</span>
+                    <span>◷ Hoạt động</span>
+                  </div>
+
+                  <div class="dashboard-content">
+                    <strong>Tổng quan hệ thống</strong>
+
+                    <div class="dashboard-statistics">
+                      <span>Hồ sơ</span>
+                      <span>Hoạt động</span>
+                    </div>
+
+                    <div class="chart" aria-hidden="true">
+                      <i></i>
+                      <i></i>
+                      <i></i>
+                      <i></i>
+                      <i></i>
+                      <i></i>
+                    </div>
+                  </div>
+                </div>
+
+                <span class="project-number">03</span>
+              </div>
+
+              <div class="project-information">
+                <div>
+                  <p class="project-category">
+                    PHÂN TÍCH · CƠ SỞ DỮ LIỆU
+                  </p>
+
+                  <h3>Quản lý đoàn viên</h3>
+
+                  <p class="project-description">
+                    Mô hình hóa quy trình và dữ liệu.
+                  </p>
+                </div>
+
+                <span class="arrow-circle" aria-hidden="true">↗</span>
+              </div>
+            </button>
+          </article>
+        </div>
+
+        <p
+          id="filter-status"
+          class="screen-reader-only"
+          aria-live="polite"
+        ></p>
+      </div>
+    </section>
+
+    <!-- KỸ NĂNG -->
+    <section class="section container skills" id="skills">
+      <div>
+        <p class="eyebrow">03 / KỸ NĂNG &amp; CÁCH LÀM VIỆC</p>
+
+        <h2>
+          Từ bản phác thảo<br>
+          đến dòng code.
+        </h2>
+
+        <p class="muted">
+          Những công cụ và phương pháp mình đang học,
+          thực hành qua các bài tập.
+        </p>
+      </div>
+
+      <div class="skill-list">
+        <article class="skill-item">
+          <span class="skill-number">01</span>
+
+          <div>
+            <h3>Thiết kế giao diện</h3>
+            <p>Figma · Wireframe · Prototype · Responsive</p>
+          </div>
+        </article>
+
+        <article class="skill-item">
+          <span class="skill-number">02</span>
+
+          <div>
+            <h3>Phát triển website</h3>
+            <p>HTML · CSS · JavaScript · Git</p>
+          </div>
+        </article>
+
+        <article class="skill-item">
+          <span class="skill-number">03</span>
+
+          <div>
+            <h3>Phân tích hệ thống</h3>
+            <p>Use case · UML · SQL · Phân tích yêu cầu</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- QUY TRÌNH -->
+    <section class="section container process-section">
+      <p class="eyebrow">04 / QUY TRÌNH THỰC HÀNH</p>
+
+      <div class="process-grid">
+        <article class="process-item">
+          <span>01 / HIỂU</span>
+
+          <h3>Phân tích yêu cầu</h3>
+
+          <p>
+            Xác định người dùng, nội dung và các luồng tương tác
+            cần thiết cho sản phẩm.
+          </p>
+        </article>
+
+        <article class="process-item">
+          <span>02 / LÀM</span>
+
+          <h3>Thiết kế &amp; lập trình</h3>
+
+          <p>
+            Xây dựng giao diện responsive và quản lý từng
+            thay đổi bằng Git.
+          </p>
+        </article>
+
+        <article class="process-item">
+          <span>03 / KIỂM CHỨNG</span>
+
+          <h3>Kiểm tra &amp; triển khai</h3>
+
+          <p>
+            Kiểm tra chức năng, đường dẫn tài nguyên
+            và ghi lại kết quả thực tế.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- LIÊN HỆ -->
+    <section class="contact-section" id="contact">
+      <div class="section container contact-content">
+        <p class="eyebrow">05 / CÙNG KẾT NỐI</p>
+
+        <h2>
+          Một cuộc trò chuyện.<br>
+          <em>Một ý tưởng mới.</em>
+        </h2>
+
+        <p>
+          Mình luôn sẵn sàng trao đổi về thiết kế giao diện,<br>
+          lập trình web và những ý tưởng mới.
+        </p>
+
+        <a class="button button-dark" href="#projects">
+          Xem các dự án <span>↗</span>
+        </a>
+
+        <span class="contact-star" aria-hidden="true">✳</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer container">
+    <a class="logo" href="#home">
+      huy<span>®</span>
+    </a>
+
+    <p>© 2026 Huy · Portfolio học tập</p>
+
+    <a href="#about">Giới thiệu bản thân ↗</a>
+
+    <a href="#home">Về đầu trang ↑</a>
+  </footer>
+
+  <!-- POPUP CHI TIẾT DỰ ÁN -->
+  <dialog
+    id="project-dialog"
+    aria-labelledby="dialog-title"
+    aria-describedby="dialog-description"
+  >
+    <button
+      class="dialog-close"
+      id="close-dialog"
+      type="button"
+      aria-label="Đóng chi tiết dự án"
+    >
+      ×
+    </button>
+
+    <p class="eyebrow" id="dialog-category"></p>
+
+    <h2 id="dialog-title"></h2>
+
+    <p id="dialog-description"></p>
+
+    <h3>Phạm vi thực hành</h3>
+
+    <ul id="dialog-features"></ul>
+
+    <p class="notice" id="dialog-note"></p>
+
+    <button
+      class="button button-dark"
+      id="confirm-dialog"
+      type="button"
+    >
+      Đã xem <span>✓</span>
+    </button>
+  </dialog>
+</body>
+</html>
